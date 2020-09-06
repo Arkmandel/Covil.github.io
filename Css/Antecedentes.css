@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 18px;
+    background-image: url("../Images/paper.jpg");
+    font-family: 'Papyrus',fantasy;
+    color: #1B1B1B;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.topnav{
+    position: fixed;
+   background-color: #333;
+   overflow: hidden;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   z-index: 10;
+   margin-bottom: 50px;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 0.68em;
+}
+
+.topnav a:hover{
+    background-color: #3f0034;
+    color: #e60000;
+}
+
+.topnav a.active{
+    background-color: #676767;
+    color: #f2f2f2;
+}
+
+.topnav .icon{
+    display: none;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 0.68em;
+}
+
+.content{
+    box-sizing: content-box;
+    overflow: auto;
+    width: 1030px;
+    height: fit-content;
+    text-align: justify;
+    position: absolute;
+    left: 160px;
+    margin: auto auto;
+    z-index: 3;
+    padding-bottom: 100px;
+
+}
+
+#title{
+    text-align: center;
+    font-family: Tangerine;
+    font-size: 5em;
+    margin-top: 50px;
+
+}
+
+#adLeft {
+    height: 600px;
+    width: 160px;
+    float: left;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-right: 10px;
+}
+
+#adLefti {
+    height: 828px;
+    width: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 205px;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#adMiddle {
+    height: 130px;
+    width: 1030px;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#adRight{
+    height: 600px;
+    width: 160px;
+    float: right;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-left: 10px;
+
+}
+
+#adRighti {
+    height: 828px;
+    width: 160px;
+    position: absolute;
+    z-index: 1;
+    top: 205px;
+    right: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+#about::first-letter{
+    font-size: 1.5em;
+    font-style: bold;
+}
+
+#about{
+    width: 400px;
+    box-sizing: content-box;
+    overflow: auto;
+    top: 205px;
+    
+}
+
+#sobre{
+    float: right;
+    width: fit-content;
+}
+
+.backTitle {
+    text-decoration: underline;
+}
+
+.content a:link{
+    color: #3f0034;
+}
+
+.content a:visited{
+    color: #3f0034;
+}
+
+p.sign{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    float: right;
+    
+}
+
+#greet{
+    font-size: .9em;
+    float: right;
+    clear: both;
+    display: flex;
+}
+
+
+p.present{
+    text-align: center;
+}
