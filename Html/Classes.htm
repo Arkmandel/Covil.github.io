@@ -1,25 +1,360 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="../Css/Index.css">
-        <script src="../Js/Index.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Tangerine:regular,700" rel="stylesheet"/>
-    </head>
+<html lang="pt">
+    <title>Classes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="../Css/Themepurple.css">
+    <link rel="stylesheet" href="../Css/ClassesThemes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Css/Classes.css">
     <body>
-        <div id="title">
-            <h1><b>D&D 5ª Edição</b></h1>
-            <div>
-                <nav>
-                    <a href="Index.htm">Home</a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                </nav>
+
+        <!-- Navbar -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme-l1 w3-top w3-left-align w3-large">
+                <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+                <a href="../Index.htm" target="_blank" id="home" class="w3-bar-item w3-button w3-theme-l3 w3-dghover-theme w3-dghover-text-theme-d5">Home</a>
+                <a href="Antecedentes.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Antecedentes</a>
+                <a href="Deuses.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Deuses</a>
+                <a href="Habilidades.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Habilidades</a>
+                <a href="Iniciantes.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Iniciantes</a>
+                <a href="Mestres.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Mestres</a>
+                <a href="Pericias.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Pericias</a>
+                <a href="Races.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Raças</a>
+                <a href="Feats.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hide-medium w3-hover-brown w3-hover-text-deep-orange">Talentos</a>
+                <a href="About.htm" target="_blank" id="about" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hide-medium w3-phover-theme w3-chover-text-theme">Sobre</a>
             </div>
         </div>
-        <nav></nav>
+
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-btheme-l2 w3-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#artificer">Artifice</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#barbarian">Bárbaro</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#bard">Bardo</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#blood">Blood Hunter</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#bruxo">Bruxo</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#cleric">Clérigo</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#druid">Druida</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#sorcerer">Feiticeiro</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#fighter">Guerreiro</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#rogue">Ladino</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#mage">Mago</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#monk">Monge</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#paladino">Paladino</a>
+            <a class="w3-bar-item w3-button w3-hover-brown w3-hover-text-deep-orange" href="#ranger">Patrulheiro</a>
+        </nav>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+            <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+            <div class="w3-main" style="margin-left:250px">
+
+            <div class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h4><em>"Ark,meu personagem treinou bastante (ou viveu dessa forma), e agora? Pra onde vou? O que faço?<br> 
+                        O que eu posso escolher?"<br><br>
+                        Bem meu caro aventureiro, podes escolher uma classe, pense. Durante sua vida para o que e   le treinou (Ou o que ele estudou)<br> Leve em consideração tambem que cada classe exige um tipo de treinamento diferenciado. Então pense onde treinou, quem foi seu mentor e que tipo de aprendiz foi</em><br><br> <strong>Portanto existem algumas classes e é sobre isso que eu irei te explicar. Me acompanhe!</strong></h4><br>
+                        <h1 class="w3-text-brown" style="text-align: center;">Classes</h1>
+                        <p>Classes, são "profissões" ou melhor dizendo uma capacidade (ou um chamado sobrenatural) que se é percebido em algum momento de sua vida.</p>
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                <h1 class="w3-atext-theme" id="artifice"><a href="artifice.htm">Artifice</a></h1><br>
+                <h5>Mestres em descobrir magica em objetos, artifices são inventores supremos. Eles veêm magic como um sistema complexo esperando para ser decifrado e controlado. Artifices usam ferramentas para canalizar poderes arcanos, criar objetos magicos. Para conjurar um feitiço, um artifice pode utilizar suprimentos de alquimista para criar um elixir potente, suprimentos de cartografo para inscrever um simbolo de poder em uma armadura de um aliado, ou ferramentas de funileiros para criar um encanto temporario. A magia dos artifices é atrelada à suas ferramentas e seus talentos. <br><br></h5>
+
+                <p>
+                    <strong>CIÊNCIA ARCANA</strong><br>
+                    No mundo de <em>Eberron,</em> magia arcana tem sido captada e empregada por toda sociedade. Artifices refletem essa evolução. O conhecimento deles de artefatos magicos, e a habilidade deles de inbuir artefatos mundanos com magia, permite os projetos miraculosos de <em>Eberron</em> continuar. Durante a ultima guerra, Artifices eram lideres em larga escala. Muitas vidas foram salvas por causa das invenções desses bravos artifices, mas incontavéis vidas tambem foram perdidas por causa da destruição em massa liberados por suas criações.<br><br>
+                    
+                    <strong>BUSCADORES DE CONHECIMENTO</strong><br>
+                    Nada anima mais um artifice do que descobrir um novo metal ou descobrir uma fonte de energia elemental. Em circulos de artifices, novas invenções e descobertas estranhas criam o maior excitamento possivel. Artifices que desejam deixar sua marca devem inovar, criando novidades, ao inves de modificar designs conhecidos. Esse ímpeto por inovação leva os artifices à se tornarem aventureiros. As rotas principais e regiões poupuladas de <em>Eberron</em>, à muito tem sido explorado. Portanto, artifices buscam as fronteiras da civilização com esperanças de realizar a proxima grande descoberta na pesquisa arcana.
+                </p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-bartext-theme" id="barbarian"><a href="barbaro.htm">Bárbaro</a></h1><br>
+                    <h5>Um humano alto membro de alguma tribo caminha em meio a uma nevasca, coberto por peles e empunhando seu machado. Ele gargalha à medida que avança em direção do gigante do gelo que ousou caçar os alces que o seu povo arrebanhava.
+                        Uma meio-orc rosna para o último que ousou desafiar sua autoridade sobre a tribo selvagem, pronta para quebrar seu pescoço com suas mãos nuas da mesma forma que ela fez com os outros seis rivais anteriores. 
+                        Espumando pela boca, um anão bate com seu elmo na cara de um inimigo drow, depois dirige seu cotovelo armadurado na direção do estomago de outro. 
+                        Esses bárbaros, diferentes da forma que conseguem, são definidos por sua fúria: desenfreada, inextinguível e irracional fúria. Mais que uma mera emoção, sua raiva é
+                        a ferocidade de um predador acuado, o assalto implacável de uma tempestade, a turbulência agitada do mar.
+                        Para alguns, suas fúrias emerge da comunhão com ferozes espíritos animais. Outras provem de um reservatório turvo de raiva de um mundo cheio de dor. Para cada bárbaro, a fúria é um poder que preenche não apenas o frenesi de batalha, mas também reflexos, resiliência e proezas de força incríveis.<br><br></h5>
+                        
+                        <p><strong>INSTINTO PRIMITIVO</strong><br><br>
+                        As pessoas das cidades e vilas costumam se vangloriar de como seus meios civilizados os diferencia dos animais, como se renegar sua própria natureza fosse um indicio de superioridade. Para um bárbaro, no entanto, a civilização não é nenhuma virtude, mas um sinal de fraqueza. Os fortes abraçam a sua natureza selvagem – instintos
+                        aguçados, fisicalidade primitiva e fúria voraz. Bárbaros ficam desconfortáveis quando estão cercados por muralhas e multidões. Eles crescem na natureza selvagem de suas terras natais: a tundra, selva ou pradarias onde suas tribos vivem e caçam. 
+                        Os bárbaros se sentem mais vivos em meio ao caos do combate. Eles podem entrar num estado de furor quando sua fúria toma controle, concedendo -lhes força e resiliência sobre-humanas. Um bárbaro pode consumir desse reservatório de fúria apenas algumas vezes antes de descansar, mas essas poucas fúrias geralmente são suficientes para derrotar seja lá o que está ameaçando o seu caminho. <br><br>
+                        
+                        <strong>UMA VIDA DE PERIGO</strong><br><br>
+                        Nem todos os membros de uma tribo ditos como “bárbaros” por descendentes de sociedades civilizadas pertencem a classe bárbaro. Um bárbaro de verdade dentre essas pessoas é tão incomum quanto um guerreiro bem treinado em uma cidade, e ele possui um papel similar como protetor do povo e líder em tempos de guerra. A vida na natureza selvagem do mundo é cheia de perigos: tribos rivais, clima mortal e monstros terríveis. Bárbaros investem em direção ao perigo de cabeça para que o seu povo não precise fazê-lo.
+                        Sua coragem em frente ao perigo torna os bárbaros perfeitos para se aventurarem. Peregrinar é, muitas vezes, um meio de vida para tribos nativas e a vida desenraizada de um aventureiro é um empecilho pequeno para um bárbaro. Alguns bárbaros sentem falta das estruturas familiares bem forjadas de suas tribos, mas, eventualmente, encontram uma forma de substituí-las por laços formados entre os membros dos seus grupos de aventura.
+                        </p>
+                        
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-badtext-theme" id="bard"><a href="bardo.htm">Bardo</a></h1><br>
+                    <h5>Cantarolando enquanto entrelaça os seus dedos em volta de um monumento antigo em uma ruina a muito esquecida, uma       meio-elfa vestida em couros gastos encontra o conhecimento que brota de sua mente, conjurado através da magia de sua música–conhecimento do povo que construiu o monumento e a saga mística é descrita.
+                    Um austero guerreiro humano bate sua espada ritmicamente contra sua brunea, ditando o andamento do seu canto de guerra e exortando bravura e heroísmo em seus companheiros. A magia da sua canção os fortalece e encoraja.
+                    Gargalhando enquanto entoa sua citara, uma gnoma tece sua sutil magia sobre os nobres reunidos, garantindo que as palavras dos seus companheiros serão bem recebidas.
+                    Não importa se um escolar, escaldo ou malandro, o bardo tece sua magia através de palavras e música para inspirar aliados, desmoralizar oponentes, manipular mentes, criar ilusões e, até mesmo, curar ferimentos.<br><br></h5>
+                        
+                    <p><strong>MÚSICA E MAGIA</strong><br>
+                    No mundo de D&D, palavras e música não são meras vibrações do ar, mas vocalizações com poder próprio. O bardo é um mestre da canção, discurso e a magia contida neles. Os bardos dizem que o multiverso foi criado a partir da palavra, que as palavras dos deuses lhe deram forma, e os ecos dessas Palavras de Criação primordiais ainda ressoam através do cosmos. A música dos bardos é uma tentativa de capitar e aproveitar esses ecos, sutilmente tecidas em suas magias e poderes. A maior força dos bardos é sua completa versatilidade. Muitos bardos preferem ficar as margens do combate, usando suas magias para inspirar seus aliados e atrapalhar seus oponentes à distância. Porém, os bardos são capazes de se defender em combate corporal, se necessário, usando suas magias para aprimorar suas espadas e armaduras. Suas magias inclinam-se para os encantamentos e ilusões ao invés de magias notavelmente destrutivas. Eles possuem um vasto conhecimento de muitos assuntos e uma aptidão natural que lhes permite fazer praticamente tudo bem. Bardos se tornam mestres dos talentos que eles definem em suas mentes para a perfeição, de performance musical até conhecimento exotérico.<br><br>
+                        
+                    <strong>APRENDENDO COM A EXPERIÊNCIA</strong><br>
+                    Os verdadeiros bardos não são comuns no mundo. Nem todo menestrel cantando em uma taverna ou bobo saltitando na corte real é um bardo. Descobrir a magia escondida na música requer árduo estudo e um pouco de talento natural que a maioria dos trovadores e malabaristas não tem. No entanto, pode ser difícil perceber a diferença entre esses artistas e bardos verdadeiros. A vida de um bardo é gasta vagando através dos lugares coletando conhecimento, contando histórias e vivendo da gratidão das audiências, muito parecido com qualquer outro artista. Porém, um profundo conhecimento, um nível de perícia musical e um toque de magia diferencia os bardos dos seus companheiros. Com raridade os bardos se estabelecem em algum lugar por um longo tempo e, seu desejo natural por viagens – para encontrar novos contos para contar, novas perícias para aprender e novas descobertas além do horizonte – tornam a carreira de aventureiro um chamado natural. Cada aventura é uma oportunidade de aprendizado, de praticar uma variedade de perícias, de entrar em tumbas a muito esquecidas, de descobrir antigos trabalhos místicos, de decifrar tomos ancestrais,
+                    de viajar para lugares estranhos ou de encontrar criaturas exóticas. Os bardos adoram acompanhar heróis para testemunhar seus feitos em primeira mão. Um bardo que puder contar uma história incrivelmente inspiradora de feitos pessoais ganhará renome dentre outros bardos. De fato, após contar tantas histórias sobre os poderosos feitos conseguidos por heróis, muitos bardos tomam essa inspiração em seus corações e assumem os papeis heroicos eles mesmos.</p>
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-wartext-theme" id="bruxo"><a href="bruxo.htm">Bruxo</a></h1><br>
+                    <h5>Com um pseudodragão enrolado em seu ombro, um jovem elfo vestindo robes dourados sorri calorosamente, tecendo um charme mágico através de suas doces palavras e dobrando a sentinela do palácio como deseja. A medida que chamas ganham vida em suas mãos, um mirrado humanos sussurra o nome secreto do seu patrono demoníaco, infundindo sua magia com poder abissal.
+                        Olhando, ora para um tomo surrado, ora para o alinhamento incomum das estrelas acima, um tiefling de olhos selvagens profere o ritual místico que abrirá umapassagem para um mundo distante. Os bruxos são desbravadores do conhecimento que
+                        existe escondido no tecido do multiverso. Através de pactos feitos com seres misteriosos detentores de poder sobrenatural, os bruxos desbloqueiam efeitos mágicos tão sutis quanto espetaculares. Extraindo o conhecimento antigo de seres como nobres fadas, demônios, diabos, bruxas e entidades alienígenas do Reino Distante, os bruxos remontam segredos arcanos para aprimorar seus próprios poderes.<br><br></h5>
+                        
+                        <strong>JURAMENTO E DÍVIDA</strong><br>
+                        Um bruxo é definido por um pacto com uma entidade transcendental. Às vezes o relacionamento entre um bruxo e seu patrono é como o de um clérigo com sua divindade, apesar de os seres que servem como patronos para os bruxos não serem deuses. Um bruxo poderia liderar um culto dedicado a um príncipe-demônio, um arquidemônio ou uma entidade completamente alienígena– seres que, normalmente, não são servidos por clérigos. Muitas vezes, porém, esse arranjo é mais similar ao realizado entre um mestre e seu aprendiz. O bruxo aprende e aumenta seu poder, ao custo de serviços ocasionais realizados em nome do seu patrono. A magia outorgada ao bruxo varia de pequenas, mas duradouras alterações à pessoa do bruxo (tais como a habilidade de ver no escuro ou de ler qualquer idioma) até o acesso a poderosas magias. Diferente dos magos livrescos, os bruxos suplementam sua magia com facilidade em combate. Eles se sentem confortáveis em armaduras leves e sabem usar armas simples.<br><br>
+                        
+                        <strong>ESCAVANDO SEGREDOS</strong><br>
+                        Os bruxos são guiados por um insaciável desejo por conhecimento e poder, que os compele aos seus pactos e molda suas vidas. Essa sede leva os bruxos a fazerem seus pactos e também molda suas carreiras. Histórias de bruxos criando elos com corruptores são vastamente conhecidos. Porém, muitos bruxos servem patronos que não são abissais. Algumas vezes um viajante na floresta chega a uma estranhamente bela torre, conhece seu senhor ou senhora feérico e acaba por fazer um pacto sem ter total ciência disso. E, as vezes,enquanto vasculha em tomos de conhecimento proibido, a mente brilhante, porem enlouquecida de um estudante é levada a realidades além do mundo material em direção a seres alienígenas habitantes do vazio exterior. Quando um pacto é selado, a sede de conhecimento e poder do bruxo não pode ser saciada com mero estudo e pesquisa. Ninguém faz um pacto com uma entidade tão poderosa se não deseja usar esse poder atrás de benefícios. Em vez disso, a grande maioria dos bruxos gastam seus dias em uma perseguição desenfreada por seus objetivos, que normalmente os leva a algum tipo de aventura. Além disso, as demandas de seus patronos também leva os bruxos a se aventurar.</p>
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-bhtext-theme" id="blood"><a href="blood.htm">Blood Hunter</a></h1><br>
+                    <h5>Marcado, mas decidido, seu rosto pingando de suor, um meio-orc enrubesce um dedo em suas feridas para desenhar um glifo rubi brilhante no ar. Ele agarra o sigilo completo e sem peso, torcendo-o para liberar energias mágicas escuras que disparam , amaldiçoando o gigante perseguidor de dentro de suas próprias veias para melhorar ainda mais as chances. Um meio-elfo misterioso envolto em uma capa gasta e armadura de couro resistente investiga cuidadosamente uma cena grizzly fora da estrada, seus olhos brilhando com reconhecimento enquanto ela medita sobre os restos do massacre. O sobrevivente que cautelosamente a contratou recua com um salto quando o meio-elfo de repente se levanta, certo do conhecimento do culpado, de onde ele chama de lar e do quão pouco tempo resta para encontrá-lo.
+                        Entrando nas câmaras sem luz de poeira antiga e sussurros persistentes, o nariz do halfling aumenta o cheiro pungente de perigo iminente quando ela ouve o ruído de ossos e garras em pedras próximas. em runas brilhantes de magia poderosa, sua espada de repente engolfada em chamas arcanas, ansiosa para marcar e queimar a carne de seus inimigos. Freqüentemente temidos ou mal compreendidos, e impulsionados por um impulso interminável de destruir os perversos, os Blood Hunters são guerreiros inteligentes e misteriosos que vincularam sua essência às criaturas sombrias que caçam para que os melhores falam e sobrevivam às suas presas. Armados com os ritos da magia de sangue proibida e um disposição de sacrificar sua própria vitalidade e humanidade pela causa, eles protegem os reinos das sombras, sempre vigilantes para evitar se tornarem os mesmos monstros que escolheram para caçar.<br><br></h5>
+                        
+                        <p><strong>SACRIFÍCIO PARA PRESERVAR A VIDA</strong><br>
+                        Enquanto a maioria das escolas clássicas de estudo de magia são bem conhecidas e amplamente respeitadas, os encantamentos menos refinados e macabros do <em>oficio de sangue</em> foram proibidos e perdidos para a maior parte do mundo civilizado. Os Blood Hunters recuperaram essas técnicas dos olhos julgadores da sociedade , descobrindo que a natureza esotérica da magia de sangue é eficaz contra os males que freqüentemente desafiam os poderes divinos que historicamente mantêm a linha. Por meio de estudo e prática cuidadosos, os Blood Hunters aprimoraram os ritos do <em>oficio de sangue</em> em suas proezas de combate, perdendo uma faceta de sua saúde para infundir em suas armas uma poderosa magia de sangue e
+                        convocando os elementos para envolver seus ataques. Eles podem queimar uma marca misteriosa no corpo de sua presa que atrapalha as habilidades de seus inimigos e pune sua agressão, ou chamar maldições de sangue sobre seus inimigos, manipulando seus corpos por dentro. Dispostos a sofrer o que for preciso para alcançar a vitória, esses guerreiros adeptos se transformaram em uma força potente contra os terrores que ameaçam os inocentes.<br><br>
+                        
+                        <strong>UM MONSTRO PARA LUTAR CONTRA MONSTROS</strong><br>
+                        Quer seja movido pelo desejo de fazer a diferença em um mundo perigoso, pela necessidade de se vingar de um grande erro que sofreram, sendo inspirado por testemunhar as técnicas estranhas e poderosas de outro caçador de sangue em pessoa, ou apenas procurando um lugar para ficar por muito tempo em um mundo indiferente, as razões pelas quais alguém pode assumir o <em>Maldição do Caçador</em> e escolher esta vida são muitas e variadas. Ao se juntar a uma ordem de Blood Hunters, a pessoa também está se juntando a uma família unida pelo serviço uns aos outros e pela causa comum. Para muitos, esta é a única família que eles conheceram ou deixaram, então o parentesco sentido entre os membros de uma ordem é um vínculo inquebrável. Além dos limites da ordem, entretanto, a vida de um caçador de sangue geralmente não é fácil. Os rituais da <em>Maldição do Caçador</em> regularmente deixam a pessoa visivelmente mudada e propensa a perturbar as pessoas comuns, e o testemunho de <em>oficio de sangue</em> pode invocar um medo supersticioso até mesmo do estudioso mais erudito. Embora algumas sociedades tenham aceitado as boas ações das ordens, muitos Blood Hunters escondem publicamente sua natureza, a menos que seja absolutamente necessário, sentindo-se mais confortáveis ​​nas eras e eras do mundo onde as Ordens costumam treinar. Mesmo assim, o melhor trabalho que um caçador de sangue pode fazer geralmente envolve os pobres e indefesos da periferia da sociedade, aqueles propensos ao toque corruptor de demônios e intenções sombrias. Enfrentando a ameaça de difamação, esses protetores sombrios vagam pela civilização, ganhando moedas como mercenários ou caçadores de recompensas, sempre procurando os sinais de algo mais nefasto sob a superfície. Ao escolher este caminho, um caçador de sangue irrevogavelmente deu uma parte de si à sua causa, física, emocional e às vezes moralmente. As ordens de Blood Hunters praticam seus próprios ideais e métodos únicos, muitas vezes empregando técnicas de origens sombrias que testam a força e a vontade desses guardiões. Muitos lutam com o medo de perder esta luta, então uma vida de disciplina e vigilância direciona suas viagens enquanto eles vagam pelo campo em busca de aventureiros com ideias semelhantes e sussurros de ações sombrias em andamento.</p>
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-cltext-theme" id="cleric"><a href="clerigo.htm">Clérigo</a></h1><br>
+                    <h5>Os braços e olhos erguem-se na direção do sol e com uma prece em seus lábios, um elfo começa a brilhar com luz própria, que irradia para curar seus surrados companheiros em batalha. Com um cântico de batalha, um anão golpeia com seu machado por todos os lados, abrindo caminho em meio às linhas de orcs posicionadas contra ele, louvando os deuses por cada inimigo derrubado. Invocando maldições contra as forças de mortos-vivos, um humano levanta seu símbolo sagrado enquanto a luz divina brilha ao seu redor, banindo as criaturas que há um momento atrás se amontoavam sobre seus companheiros.
+                        Clérigos são intermediadores entre o mundo mortal e o distante plano dos deuses. Tão variados quanto os deuses que servem, clérigos se esforçam para ser a própria mão de seus deuses. Não é apenas um sacerdote comum, mas alguém investido de poder divino.<br><br></h5>
+                        
+                        <p><strong>CURANDEIROS E COMBATENTES</strong><br>
+                        Magia divina, como o nome sugere, é o poder dos deuses fluindo deles para o mundo mortal. Clérigos são os condutores desse poder, manifestando-o através de efeitos milagrosos. Os deuses não conferem esse poder a qualquer um que o queira, mas apenas àqueles escolhidos para cumprir o chamado. Fazer uso do poder divino não envolve estudo ou treinamento. Um clérigo pode aprender ritos antigos e preces específicas, mas a habilidade de usar magias divinas depende de devoção e de uma intuição poderosa sobre os desejos da divindade. Clérigos combinam o poder mágico de curar e inspirar seus aliados com magias que ferem e debilitam seus inimigos. Eles podem causar medo e pavor, espalhar pragas ou venenos, e até lançar fogo divino para consumir seus inimigos. Para aqueles malfeitores que merecem uma maça na têmpora, o clérigo se utiliza de seu treinamento de combate para enfrentar seus inimigos corpo-a-corpo, auxiliado pelo poder divino.<br><br>
+                        
+                        <strong>AGENTES DIVINOS</strong><br>
+                        Nem todo acólito ou servo em um templo ou santuário é necessariamente um clérigo. Alguns sacerdotes são chamados para uma vida simples de servidão, propagando a vontade de seu deus através de preces e sacrifício, e não através de magia ou poderio militar. Em algumas cidades, o sacerdócio equivale a um escritório político, visto como um degrau sólido para alcançar patamares superiores de autoridade e não envolvendo qualquer comunhão com a divindade. Clérigos verdadeiros são raros nas estruturas hierárquicas. Quando um clérigo inicia uma vida como aventureiro, geralmente é porque seu deus exigiu assim. Perseguir os objetivos de um deus geralmente envolve enfrentar perigos além dos limites da civilização, destruindo o mal ou buscando relíquias sagradas em tumbas antigas. Muitos clérigos são ainda requisitados para defender os adoradores de seu deus, o que pode significar combater ogros em fúria, negociar a paz entre nações ou selar um portal que permitiria que um corruptor entrasse no Plano Material. A maioria dos clérigos aventureiros mantém conexões com templos e ordens de sua religião. Um templo pode pedir a ajuda de um clérigo ou um sumo-sacerdote pode ter poder suficiente para exigir seus serviços.</p>
+                        
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-drtext-theme" id="druid"><a href="druida.htm">Druida</a></h1><br>
+                    <h5>Erguendo um cajado retorcido envolto em azevinho, uma elfa invoca a fúria da tempestade e convoca raios explosivos de eletricidade para destruir os orcs carregando tochas que ameaçam sua floresta. Se esgueirando, fora da vista, no alto da copa das árvores na forma de um leopardo, um humano espreita para fora da selva, em direção da estranha construção de um Templo do Elemental do Ar Maligno, mantendo os olhos fixos nas atividades dos cultistas. Brandindo uma lâmina feita de puro fogo, um meioelfo investe em direção a uma massa de soldados esqueléticos, destruindo a magia sobrenatural que deu as tolas criaturas o semblante falso de vida. Quer seja convocando as forças elementais da natureza, ou emulando as criaturas do mundo animal, os druidas são encarnações da resistência, astúcia e fúria da natureza. Eles não se consideram donos da natureza. Ao invés disso, eles se veem como extensões da vontade indomável da natureza.<br><br></h5>
+
+                    <p><strong>FORÇA DA NATUREZA</strong><br>
+                    Os druidas reverenciam a natureza acima de tudo, adquirindo suas magias e outros poderes mágicos, ou da força da natureza per si ou de uma divindade da natureza. Muitos druidas buscam uma espiritualidade mística de união transcendental com a natureza ao invés de se devotarem a uma entidade divina, enquanto outros servem deuses da natureza selvagem, animais ou forças elementais. As antigas tradições druídicas, algumas vezes são chamadas de Crença Antiga, contrastando com a adoração de deuses em templos ou santuários. As magias de druida são orientadas para a natureza e para os animais – o poder da presa e garra, do sol e da lua, do fogo e da tormenta. Os druidas também adquirem a habilidade de transformarem em animais e alguns druidas fazem estudos pessoais dessa pratica, chegando até mesmo ao ponto de preferirem formas animais a suas formas naturais.<br><br>
+
+                    <strong>PRESERVAÇÃO DO EQUILÍBRIO</strong><br>
+                    Para os druidas, a natureza existe em um equilíbrio precário. Os quatro elementos que fizeram o mundo–água, ar, fogo e terra – devem permanecer em equilíbrio. Se um elemento começar a ganhar mais poder que os outros, o mundo pode ser destruído, se transformando em um dos planos elementais e se despedaçando em seus componentes elementais. Por tanto, os druidas se opõem a cultos de Elementais Malignos e outros que promovem um elemento, excluindo os outros. Os druidas também estão preocupados com o delicado equilíbrio ecológico que sustenta a vida animal e vegetal e a necessidade do povo civilizado de viver em harmonia com a natureza, não em oposição a ela. Os druidas aceitam a crueldade da natureza, mas odeiam o que não é natural, incluindo aberrações (como observadores e devoradores de mentes) e mortos-vivos (como zumbis e vampiros). Os druidas, as vezes, lideram incursões contra tais criaturas, especialmente quando os monstros invadem o território do druida. Druidas, as vezes, são encontrados guardando locais sagrados ou vigiando regiões de natureza intocada. Porém, quando um perigo significante surge, ameaçando o equilíbrio da natureza ou as terras que eles protegem, os druidas tomam papeis mais ativos em combate contra as ameaças, como aventureiros</p>
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-srtext-theme" id="sorcerer"><a href="feiticeiro.htm">Feiticeiro</a></h1><br>
+                    <h5>Com olhos brilhando dourado, uma humana estica suas mãos e libera o fogo dracônico que queima em suas veias. A medida que um inferno consome seus oponentes, asas de couro surgem nas suas costas e ela ergue-se no ar. Os longos cabelos balançam com a conjuração do vento, um meio elfo abre seus braços totalmente e joga a cabeça para trás. Erguendo-o momentaneamente do chão, uma onda de magia surge sobre ele, por meio dele e, fora dele, uma poderosa explosão de relâmpago. Esgueirando-se atrás de uma estalagmite, uma halfling aponta seu dedo em um troglodita em investida. Uma explosão de chamas é liberada através do seu dedo e atinge a criatura. Ela toma cobertura atrás da formação rochosa com um sorriso, sem saber que sua magia selvagem deixou sua pele com um brilho azulado. Os feiticeiros carregam um patrimônio mágico conferido a eles por uma linhagem exótica, alguma influência de outro mundo ou exposição a forças cósmicas desconhecidas. Não é possível estudar feitiçaria como se aprende um idioma, assim como não se aprende a viver uma vida lendária. Ninguém escolhe a feitiçaria: os poderes escolhem o feiticeiro.<br><br></h5>
+
+                    <p><strong>MAGIA BRUTA</strong><br>
+                    A magia é parte de todo feiticeiro, inundando corpo, mente e espirito com um poder latente que espera para ser dominado. Alguns feiticeiro carregam magia que emerge de uma antiga linhagem infundida com a magia dos dragões. Outros carregam uma magia bruta, incontrolável dentro de si, uma tormenta caótica que se manifesta de formas inexplicáveis. A aparência dos poderes de feitiçaria são vastamente imprevisíveis. Algumas linhagens dracônicas produzem apenas um feiticeiro por geração, porém, em outras linhas de descendência, todos os indivíduos serão feiticeiros. A maior parte do tempo, os talentos de feitiçaria aparecem aparentemente ao acaso. Alguns feiticeiros não conseguem determinar a origem do seu poder, enquanto outros o relacionam com estranhos eventos de suas vidas. O toque de um corruptor, a bênção de uma dríade no nascimento de um bebê ou experimentar a água de uma fonte misteriosa podem conceder o dom da feitiçaria. Também é possível adquirir esse dom de uma divindade da magia, da exposição as forças elementais dos Planos Interiores ou do caos alucinante do Limbo ou ao vislumbrar o funcionamento interno da realidade. Os feiticeiros não veem serventia em grimórios ou antigos tomos de conhecimento místico buscados pelos magos, nem buscam um patrono para conceder-lhes suas magias, como um bruxo faz. Ao aprender a explorar e canalizar sua própria magia inata, eles descobrem novas e incríveis formas de liberar esse poder.<br><br>
+
+                    <strong>PODERES INEXPLICÁVEIS</strong><br>
+                    Os feiticeiros são raros no mundo e é incomum encontrar um feiticeiro que não esteja envolvido na vida de aventuras de alguma forma. Pessoas com poder mágico fluindo em suas veias descobrem cedo que o poder não gosta de ficar quieto. A magia de um feiticeiro gosta de ser exercida e tem uma tendência de fluir de maneiras imprevisíveis se não for chamada. Muitas vezes, os feiticeiros tem motivações obscuras ou quixotescas que os leva a aventuras. Alguns buscam uma maior compreensão da força mágica que os infunde ou a resposta do mistério de sua origem. Outros, esperam encontrar uma forma de se livrar dele ou de liberar seu potencial máximo. Independente dos seus objetivos, os feiticeiros são tão uteis para um grupo de aventureiros quanto os magos, compensando a falta de variedade de conhecimento mágico com uma enorme flexibilidade no uso das magias que eles conhecem.</p>
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-fttext-theme" id="fighter"><a href="guerreiro.htm">Guerreiro</a></h1><br>
+                    <h5>Uma humana em sua armadura de batalha empunha seu escudo antes de ir ao encontro de um bando de goblins. Um elfo atrás dela, em seu corselete de couro batido, salpica os goblins com flechas atiradas de seu primoroso arco. O meio-orc próximo, dá ordens visando coordenar os ataques dos dois combatentes para obter a melhor vantagem. Um anão em sua cota de malha coloca seu escudo entre à clava de um ogro e seu companheiro, direcionando o ataque mortal para o outro lado. Seu companheiro, um meio-elfo em sua brunea, brande suas duas cimitarras em um turbilhão de golpes, rodeando o ogro a procura de um ponto fraco em suas defesas. Um gladiador luta por esporte em uma arena, um mestre com seu tridente e rede, hábil em prender os inimigos e arrastá-los para delírio da plateia – e sua própria vantagem tática. A espada de seu oponente lampeja com um brilho azul um instante antes de um relâmpago atingi-lo pelas costas. Todos esses heróis são guerreiros, talvez a mais diversificada classe de personagens nos mundos de <em>DUNGEONS & DRAGONS.</em> Cavaleiros em missões, lordes conquistadores, campeões reais, infantaria de elite, mercenários rígidos e bandidos reis, como guerreiros, eles compartilham de uma maestria com armas e armaduras sem precedentes, bem como um vasto conhecimento e habilidades em combate. E eles estão bem familiarizados com a morte, seja simplesmente conhecendo-a ou desafiando-a cara a cara.
+                        <br><br></h5>
+                        
+                        <p><strong>ESPECIALISTAS BEM-SUPRIDOS</strong><br>
+                        Guerreiros aprendem o básico de todos os estilos de combate. Todo guerreiro sabe brandir um machado, esgrimir com uma rapieira, empunhar uma espada longa ou uma espada grande, usar um arco ou mesmo prender inimigos em uma rede com algum grau de perícia. Da mesma forma, um guerreiro sabe usar escudos e qualquer tipo de armadura. Além do conhecimento básico, cada guerreiro se especializa em certo estilo de combate. Alguns se concentram na arquearia, outros em lutar com duas armas ao mesmo tempo e ainda existem aqueles que aprimoram suas habilidades marciais com magia. Essas combinações de ampla capacidade generalista e uma vasta especialização tornam os guerreiros combatentes superiores nos campos de batalha e masmorras.<br>
+                        
+                        
+                        
+                        <strong>TREINADO PARA O PERIGO</strong><br>
+                        Nem todo membro da patrulha da cidade, da milícia ou do exército da rainha é um guerreiro. Muitos deles são soldados relativamente treinados somente com o básico do conhecimento de combate. Soldados veteranos, oficiais militares, guarda-costas treinados, cavaleiros dedicados e figuras similares são guerreiros. Alguns guerreiros são compelidos a usar seu treinamento como aventureiros. Explorar masmorras, matar monstros e outros trabalhos perigosos, comuns a aventureiros, são uma segunda natureza para o guerreiro, não tão diferente da vida que ele ou ela deixou para trás. Talvez existam grandes riscos, mas também grandes recompensas – poucos guerreiros na patrulha da cidade têm a oportunidade de descobrir a espada mágica língua flamejante, por exemplo.</p>
+                </div>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-twothird w3-container">
+                        <h1 class="w3-rgtext-theme" id="rogue"><a href="ladino.htm">Ladino</a></h1><br>
+                        <h5>
+                            Sinalizando para seus companheiros esperarem, uma halfling esgueira-se à frente pelo corredor da masmorra. Ela encosta seus ouvidos na porta, puxa suas ferramentas e abre a fechadura em um piscar de olhos. Ela então desaparece nas sombras, ao mesmo tempo em que seu companheiro guerreiro se move para abrir a porta com um chute. Uma humana espreita nas sombras de um beco, enquanto seu cúmplice se prepara para a parte dele na emboscada. Quando seu alvo – um notório traficante de escravos – passa pelo beco, seu cúmplice grita, o traficante de escravos vem investigar e a lâmina da assassina corta sua garganta antes mesmo dele ser capaz de emitir qualquer som. Disfarçando uma risadinha, uma gnoma agita seus dedos e magicamente surrupia o molho de chaves do cinto do guarda. No momento seguinte, as chaves estão em suas mãos, a porta da cela está aberta e ela e seus companheiros estão livres para escapar. Ladinos contam com sua perícia, furtividade e as vulnerabilidades de seus inimigos para obter vantagem em qualquer situação. Eles possuem uma habilidade especial para encontrar a solução para praticamente qualquer problema, demonstrando desenvoltura e versatilidade, a chave de qualquer grupo aventureiro de sucesso.<br><br></h5>
+                            
+                            <p><strong>PERÍCIA E PRECISÃO</strong><br>
+                            Ladinos dedicam muito de seus recursos para se tornarem mestres em várias perícias, bem como aperfeiçoar suas habilidades em combate, adquirindo uma vasta experiência que poucos personagens podem alcançar. Muitos ladinos focam na furtividade e trapaça, enquanto outros refinam suas perícias para ajudá-los nas masmorras, como escalada, encontrar e desarmar armadilhas, e abrir fechaduras. Em combate, ladinos priorizam astúcia em vez de força bruta. O ladino sempre prefere desferir um ataque preciso, bem naquele lugar que mais machuca, do que derrubar um oponente com uma série de ataques. Ladinos possuem uma habilidade quase sobrenatural de evitar o perigo, e alguns poucos aprendem truques de magia para incrementar suas outras habilidades.
+                            <br>
+                            
+                            <strong>VIVENDO ÀS SOMBRAS</strong><br>
+                            Cada cidade, cada distrito tem sua parcela de ladinos. A maioria deles vive o pior estereótipo da classe, levando a vida como assaltantes, assassinos, ladrões de rua ou vigaristas. Geralmente, esses canalhas são organizados em guildas de ladrões ou famílias criminosas. A maior parte dos ladinos opera independentemente, mas às vezes recrutam aprendizes para ajudá-los em seus golpes e assaltos. Uma pequena parcela dos ladinos vive honestamente como chaveiros, investigadores ou exterminadores, o que pode ser um trabalho perigoso em um mundo que ratos atrozes – e homens-rato – assombram os esgotos. Como aventureiros, os ladinos pendem para ambos os lados da lei. Alguns são criminosos calejados que decidiram procurar sua fortuna em montes de tesouros, enquanto outros levam uma vida de aventura para escapar da lei. Alguns aprenderam e aperfeiçoaram suas perícias com o propósito explícito de se infiltrar em ruínas antigas e criptas escondidas na busca de tesouros.</p>
+                    </div>
+                    <div class="w3-third w3-container">
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    </div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-twothird w3-container">
+                        <h1 class="w3-cotext-theme" id="mage"><a href="mago.htm">Mago</a></h1><br>
+                        <h5>
+                            Vestida com uma túnica prata que denota seu posto, uma elfa fecha seus olhos para distanciar-se das distrações do campo de batalha e entoa o seu canto sereno. Dedos se agitam à sua frente, ela completa sua magia e lança uma pequena centelha de fogo em direção dos inimigos, explodindo em chamas o incêndio que engolfa os soldados. Verificando mais de uma vez o seu trabalho, um humano inscreve um círculo mágico com giz no chão de pedra, então espalha pó de ferro ao longo de cada linha e curva graciosas. Quando o círculo está completo, ele murmura um longo encantamento. Um buraco se abre no espaço dentro do círculo, trazendo um cheiro de enxofre de outro plano bem distante. Agachado no chão em um cruzamento da masmorra, um gnomo joga um punhado de pequenos ossos com símbolos místicos escritos, murmurando algumas palavras de poder sobre eles. Ele fecha os olhos para receber as visões mais claramente, acena com a cabeça lentamente, então abre os olhos e aponta para baixo, indicando a passagem à sua esquerda. Os magos são usuários de magia soberanos, unidos e definidos como uma classe pelas magias que conjuram. Usufruindo de uma trama sutil de magia que permeia o cosmos, os magos conjuram magias explosivas de fogo, arcos de relâmpagos, enganos sutis e controle de mentes de força bruta. Sua magia invoca monstros de outros planos de existência, vislumbra o futuro ou transforma inimigos mortos em zumbis. Suas magias mais poderosas podem transformar uma substância em outra, evocar meteoros que caem do céu ou abrir portais para outros mundos. <br><br></h5>
+                            
+                            <p><strong>ESTUDIOSOS DO ARCANISMO</strong><br>
+                            Selvagem e enigmático, variado nas formas e funções, o poder da magia atrai estudiosos que buscam dominar seus mistérios. Alguns aspiram ser como deuses, moldando a realidade à sua vontade. Embora, conjurar uma magia básica requeira meramente a pronúncia de algumas palavras estranhas, gestos fugazes, e às vezes um punhado ou um grupo de materiais exóticos, esses materiais mal denotam a experiência alcançada após anos de aprendizagem e incontáveis horas de estudo. Magos vivem e morrem por suas magias. Todo o resto é secundário. Eles aprendem novas magias à medida que eles experimentam e crescem em experiência. Também podem aprender magias de outros magos, de tomos antigos ou escrituras, e de criaturas anciãs (como as fadas) que são imersas em magia.<br>
+                            
+                            <strong>O FASCÍNIO DO CONHECIMENTO</strong><br>
+                            O dia a dia de um mago não é nada comum. O mais próximo de uma vida normal que um mago pode conseguir é ser um sábio ou professor em uma biblioteca ou universidade, ensinando aos outros os segredos do multiverso. Outros magos vendem seus serviços como videntes, trabalham com as forças militares, ou buscam uma vida de crimes ou dominação. Mas o fascínio pelo conhecimento e poder atrai até mesmo os magos mais reservados para longe da segurança de seus laboratórios e bibliotecas, e os envia para ruínas e cidades perdidas. A maioria deles acredita que os magos de civilizações antigas conheciam segredos que se perderam pelas eras. Descobrir esses segredos pode abrir caminhos para um poder maior do que qualquer magia conhecida na presente época</p>
+                            
+                    </div>
+                    <div class="w3-third w3-container">
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    </div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-twothird w3-container">
+                        <h1 class="w3-motext-theme" id="monk"><a href="monge.htm">Monge</a></h1><br>
+                        <h5>
+                            Seus punhos criam um borrão enquanto defletem uma revoada de flechas que vem vindo, uma meio-elfa corre sobre uma barricada e se arremessa nas maciças fileiras de hobgoblins do outro lado. Ela gira entre eles, distribuindo seus golpes e enviando-os para o chão, até que, finalmente, apenas ela está de pé. Respirando profundamente, um humano coberto por tatuagens toma uma postura de batalha. Quando os primeiro orcs em investida alcançam-no, ele exala e umarajada de fogo é expelida de sua boca, engolfando seus oponentes. Movendo-se com o silêncio da noite, uma halfling com vestes negras pisa em uma sombra embaixo de um arco e emerge de outra mancha sombria numa sacada a poucos passos de distância. Ela desliza sua lâmina para fora da bainha de panos enrolados e se esgueira através da janela aberto em direção ao príncipe tirano, tão vulnerável no abraço do sono. Qualquer que seja suas disciplinas, os monges partilha de sua habilidade de aproveitar magicamente da energia que flui em seus corpos. Se canalizada como um exibição impressionante de maestria do combate, ou como um foco mais sutil de habilidade defensiva e velocidade, essa energia infunde tudo que um monge faz.<br><br></h5>
+                            
+                            <p><strong>A MAGIA DO CHI</strong><br>
+                            Monges fazem estudos cuidadosos da energia mágica que a maioria das tradições monásticas chama de chi. Essa energia é um elemento da mágica que inunda o multiverso – especificamente, os elementos que fluem através dos corpos vivos. Os monges atrelam esse poder dentro de si mesmos para criar efeitos mágicos e exceder a capacidade física de seus corpos, e alguns dos seus ataques especiais podem bloquear o fluxo de chi nos seus oponentes. Usando essa energia, os monges canalizam velocidade e força incríveis em seus ataques desarmados. À medida que eles ganham experiência, seu treinamento marcial e sua maestria do chi lhe confere mais poder sobre seus corpos e sobre os corpos dos seus adversários.<br>
+                            
+                            <strong>TREINAMENTO E ASCETICISMO</strong><br>
+                            Pequenos mosteiros murados se espalham pelas paisagens dos mundos de D&D, minúsculos refúgios do fluxo da vida comum, onde o tempo parece parar. Os monges que vivem ai, buscam pelo auto aperfeiçoamento através de contemplação e treino rigoroso. Muitos entram no monastério ainda crianças, enviados para viver lá quando seus pais morrem, quando não se pode encontrar comida para mantê-los ou em troca de alguma gentileza realizada pelos monges a suas famílias. Alguns monges vivem totalmente a parte da população ao seu redor, isolados de qualquer coisa que possa impedir o seu progresso espiritual. Outros fazem um juramento de isolação, surgindo apenas para servir como espiões ou assassinos ao comando de seus líderes, um nobre patrono ou outro poder mortal ou divino. A maioria dos monges não se afasta de sua vizinhança, fazendo visitas frequentes a cidades ou vilas vizinhas e trocando seus serviços por comida e outros bens. Como versáteis guerreiros, os monges, muitas vezes, acabam por proteger seus vizinho de monstros e tiranos. Para um monge, se tornar um aventureiro significa abandonar um estilo de vida estruturado e comunal para se tornar um viajante. Essa transição pode ser dura e os monges não a tomam de forma agradável. Aqueles que abandonam seus mosteiros levam seus trabalhos a sério, conduzindo suas aventuras como testes pessoais de seu crescimento físico e espiritual. Como uma regra, os monges pouco se importam com riqueza material e são guiados por um desejo de cumprir uma missão maior, ao invés de meramente matar monstros e saquear seu tesouro.
+                            </p>
+                    </div>
+                    <div class="w3-third w3-container">
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    </div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-twothird w3-container">
+                        <h1 class="w3-pltext-theme" id="paladino"><a href="paladino.htm">Paladino</a></h1><br>
+                        <h5>Vestido em uma armadura de placas que reluz a luz do sol, a despeito da poeira e sujeira de uma longa viagem, um humano larga sua espada e escudo e coloca suas mãos em um homem fatalmente ferido. Radiação divina brilha de suas mãos, o ferimento do homem se fecha e seus olhos se arregalam com espanto. Um anão se esgueira por detrás de um afloramento, seu manto negro o torna praticamente invisível durante a noite, e observa uma banda de guerra orc celebrando sua recente vitória. Silenciosamente, ele espreita em meio a eles e sussurra seu juramento e dois orcs morrem antes mesmo de perceberem que ele estava ali. Com um cabelo prateado que brilha com um raio de luz que parece iluminar apenas ele, um elfo gargalha com exultação. Sua lança golpeia num piscar, como o dos seus olhos, perfurando de novo e de novo em um gigante contorcendo-se, até que finalmente sua luz supera a escuridão dele. Seja lá quais forem suas origens e suas missões, paladinos são unidos pelos seus juramentos de se imporem contra as forças do mal. Quer seja jurado ante o altar de um deus com um sacerdote como testemunha, quer seja em um clareira sagrada diante dos espíritos da natureza e seres feéricos, ou em um momento de desespero e aflição com os mortos como únicas testemunhas, o juramento de um paladino é um laço poderoso. Ele é uma fonte de poder que transforma um guerreiro devotado em um campeão abençoado.<br><br></h5>
+                            
+                            <p><strong>A CAUSA DA JUSTIÇA</strong><br>
+                            Um paladino jura defender a justiça e integridade, se manter com as coisas boas do mundo contra a invasão das trevas e caçar as forças do mal onde quer que ela se esconda. Diferentes paladinos se focam em vários aspectos da causa da justiça, mas todos estão sujeitos aos juramentos que lhes concede poder para fazer seu trabalho sagrado. Embora, muitos paladinos serem devotos de deuses do bem, o poder de um paladino vem tanto do comprometimento com a justiça per si, quanto de um deus. Os paladinos treinam por anos para aprender as perícias de combate, dominando uma variedade de armas e armaduras. Mesmo assim, suas perícias marciais são secundárias ao poder mágico que ele empunha: o poder de curar os doentes e feridos, de destruir os cruéis e os mortos-vivos e de proteger os inocentes e aqueles que se unirem a eles na luta pela justiça.
+                            <br>
+                            
+                            <strong>ALÉM DA VIDA MUNDANA</strong><br>
+                            Praticamente por definição, a vida de um paladino é uma vida de aventura. A menos que um ferimento permanente o tenha impedido de se aventurar por um tempo, cada paladino vive nas linhas de frente da batalha cósmica contra o mal. Guerreiros são raros o suficiente nas fileiras de milícias e exércitos do mundo, mas ainda menos pessoas podem reivindicar a verdadeira vocação de um paladino. Quando eles recebem o chamado, esses guerreiros deixa suas antigas ocupações e se armam para lutar contra o mal. Algumas vezes, seus juramentos os levam a servir à coroa como líderes de grupos de elite de cavaleiros, mas até entre esses, sua lealdade primária é com a causa da justiça, não com a coroa ou país. Paladinos aventureiros levam seus trabalhos a sério. A investigação de uma ruina antiga ou de uma cripta empoeirada pode ser uma missão guiada por um proposito maior que a aquisição de tesouro. O mal espreita nas masmorras e florestas primitivas e, até mesmo, a menor vitória contra ele pode inclinar a balança cósmica para longe do esquecimento.</p>
+                    </div>
+                    <div class="w3-third w3-container">
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    </div>
+                </div>
+
+                <div class="w3-row">
+                    <div class="w3-twothird w3-container">
+                        <h1 class="w3-rntext-theme" id="ranger"><a href="patrulheiro.htm">Patrulheiro</a></h1><br>
+                        <h5>
+                            De aparência áspera e selvagem, um humano espreita sozinho através das sombras das árvores, caçando os orcs que ele sabe estarem planejando um assalto a uma fazenda próxima. Segurando uma espada curta em cada mão, ele se transforma em um vendaval de aço, talando um inimigo após o outro. Após se evadir de um cone de ar congelante, uma elfa encontra-se de pé e saca seu arco das costas, disparando uma flecha no dragão branco. Ignorando a onda de medo que emana do dragão, assim como ignorou o frio do seu sopro, ela envia uma flecha após a outro tentando encontrar as brechas entre as espessas escamas do dragão. Erguendo sua mão para o alto, um meio-elfo assobia para o falcão que o circunda acima, chamando o pássaro de volta para o seu lado. Sussurrando instruções em Élfico, ele aponta para o urso-coruja que ele estava rastreando e envia o falcão para distrair a criatura enquanto ele prepara seu arco. Longe do alvoroço das cidades e vilas, passando das divisas que abrigam a fazendas mais longínquas dos horrores do ermo, entre as árvores densas de florestas sem trilhas e através das vastas planícies vazias, os patrulheiros mantem sua vigília interminável.<br><br></h5>
+                            
+                            <p><strong>CAÇADORES MORTAIS</strong><br>
+                            Guerreiros da natureza, os patrulheiros se especializaram em caçar monstros que ameaçam as margens da civilização–assaltantes humanoides, bestas e monstruosidades devastadoras, gigantes terríveis e dragões mortais. Eles aprendem a rastrear suas presas como os predadores fazem, movendo-se silenciosamente nas florestas e se escondendo atrás de arbustos e pedregulhos. Os patrulheiros focam seu treinamento de combate em técnicas que sejam especialmente úteis contra seus inimigos favoritos específicos. Graças a sua familiaridade no ambiente selvagem, os patrulheiros adquiriram a habilidade de conjurar magias atreladas ao poder da natureza, similar ao que o druida faz. Suas magias, assim como suas habilidades de combate, enfatizam a velocidade, furtividade e caça. Os talentos e habilidades de um patrulheiro são afinados com o foco mortal na árdua tarefa de proteger as fronteiras.
+                            <br>
+                            
+                            <strong>AVENTUREIROS INDEPENDENTES</strong><br>
+                            Apesar de um patrulheiro ganhar a vida como um caçador, um guia ou um rastreador, a verdadeira vocação de um patrulheiro é defender as zonas periféricas da civilização das investidas de monstros e hordas de humanoides que vem das regiões selvagens. Em alguns lugares, os patrulheiros se reúnem em ordens secretas ou juntam forças com os círculos druídicos. Muitos patrulheiros, no entanto, são independentes até cometerem um erro, sabendo que, quando um dragão ou um bando de orcs ataca, um patrulheiro deve ser a primeira – e possivelmente a última – linha de defesa. Essa independência feroz faz dos patrulheiros ótimos aventureiros, já que eles são acostumados a vida longe do conforto de uma cama seca e banho quente. Confrontado com aventureiros mais urbanos que reclamam e choramingam sobre a dureza da vida no ambiente selvagem, os patrulheiros respondem com uma mistura de divertimento, frustração e compaixão. Mas, eles rapidamente aprendem que os outros aventureiros que podem carregar seus próprios fardos em uma luta contra os inimigos da civilização são dignos de qualquer encargo adicional. Gente mimada da cidade podem não saber como se alimentar ou encontrar água fresca nas florestas, mas eles compensam isso de outras maneiras.
+                            </p>
+                    </div>
+                    <div class="w3-third w3-container">
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    </div>
+                </div>
+
+                <div class="w3-twothird w3-container">
+                    <h4><em>Independentemente, de qual antecedente você escolha(ou até mesmo se estiver em duvida), pense. Se essa foi a vida dele antes, o que ele fazia, qual era a relação dele com seus superiores, ou a relação com as pessoas enquanto tivesse "de folga"? Tendo uma resposta pra essa pergunta, começe a pensar na historia. Onde nasceu, de quem nasceu e etc.</em></h4>
+                </div>
+                <img src="../Images/U1.png" alt="Signature" id="outro" style="float: right;">
+            </div>
+
+            <div class="footer">
+                <img src="../Images/Logo.png" alt="Logo" width="10%">
+                <p>D&D™ & © 1995-2020 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved</p>
+            </div>
+
+        <!-- END MAIN -->
+        </div>
+        <script src="../Js/Antecedentes.js"></script>
     </body>
 </html>

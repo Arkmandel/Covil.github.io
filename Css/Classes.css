@@ -1,0 +1,32 @@
+html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Papyrus", cursive;
+    background-image: url("../Images/paper.jpg");
+}
+    
+.w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+}
+
+.footer{
+    padding: 20px;
+    text-align: center;
+}
+
+#outro {
+    width: auto;
+}
+
+@media only screen and (max-width: 425px) {
+    #outro {
+        width: 100%;
+    }
+}
+
+#about{
+    float: right;
+
+}

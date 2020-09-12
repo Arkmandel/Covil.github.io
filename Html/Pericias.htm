@@ -1,258 +1,329 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <title>Pericias</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2017.css">
-    <link rel="stylesheet" href="../Css/Pericias.css">
-    <script src="../Js/Pericias.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Tangerine:regular,700" rel="stylesheet"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+        <link rel="stylesheet" href="../Css/Themepurple.css">
+        <link rel="stylesheet" href="../Css/ClassesThemes.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Perícias</title>
+        <link rel="stylesheet" href="../Css/Pericias.css">
+    </head>
     <body>
-
         <!-- Navbar -->
         <div class="w3-top">
-            <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <div class="w3-bar w3-theme-l1 w3-top w3-left-align w3-large">
                 <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-                <a href="Index.htm" target="_blank" class="w3-bar-item w3-button w3-theme-l1 w3-hover-dark-grey w3-hover-text-deep-purple" id="home">Home</a>
+                <a href="../Index.htm" target="_blank" id="home" class="w3-bar-item w3-button w3-theme-l3 w3-dghover-theme w3-dghover-text-theme-d5">Home</a>
                 <a href="Antecedentes.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Antecedentes</a>
-                <a href="Classes.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Classes</a>
-                <a href="Habilidades.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Habilidades</a>
-                <a href="Iniciantes.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Iniciantes</a>
-                <a href="Mestres.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Mestres</a>
-                <a href="Races.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Raças</a>
-                <a href="About.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange" id="about">Sobre</a>
-                <a href="Feats.htm" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Talentos</a>
+                <a href="Classes.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Classes</a>
+                <a href="Deuses.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Deuses</a>
+                <a href="Habilidades.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Habilidades</a>
+                <a href="Iniciantes.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Iniciantes</a>
+                <a href="Mestres.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Mestres</a>
+                <a href="Races.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hover-brown w3-hover-text-deep-orange">Raças</a>
+                <a href="Feats.htm" target="_blank" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hide-medium w3-hover-brown w3-hover-text-deep-orange">Talentos</a>
+                <a href="About.htm" target="_blank" id="about" class="w3-bar-item w3-padding-medium w3-button w3-hide-small w3-hide-medium w3-phover-theme w3-chover-text-theme">Sobre</a>
             </div>
         </div>
-
         <!-- Sidebar -->
-        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5w3-animate-left" id="mySidebar">
-            <script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-btheme-l3 w3-animate-left" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <button onclick="myFunction('Str')" class="w3-button w3-block w3-left-align w3-hover-orange w3-hover-text-black">
+                Força</button>
+                <div id="Str" class="w3-container w3-hide">
+                    <a class="w3-bar-item w3-button w3-hover-orange w3-hover-text-black" href="#atletismo">Atletismo</a>
+                </div>
+            
+            <button onclick="myFunction('Dex')" class="w3-button w3-block w3-left-align w3-hover-purple w3-hover-text-black">
+                Destreza</button>
+                <div id="Dex" class="w3-container w3-hide">
+                    <a class="w3-bar-item w3-button w3-hover-purple w3-hover-text-black" href="#acrobacia">Acrobacia</a>
+                    <a class="w3-bar-item w3-button w3-hover-purple w3-hover-text-black" href="#furtividade">Furtividade</a>
+                    <a class="w3-bar-item w3-button w3-hover-purple w3-hover-text-black" href="#prestidigitation">Prestidigitação</a>
+                </div>
+
+            <button onclick="myFunction('Int')" class="w3-button w3-block w3-left-align w3-hover-indigo w3-hover-text-black">
+                Inteligência</button>
+                <div id="Int" class="w3-container w3-hide">
+                    <a class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-black" href="#arcanismo">Arcanismo</a>
+                    <a class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-black" href="#historia">História</a>
+                    <a class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-black" href="#investigacao">Investigação</a>
+                    <a class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-black" href="#natureza">Natureza</a>
+                    <a class="w3-bar-item w3-button w3-hover-indigo w3-hover-text-black" href="#religiao">Religião</a>
+                </div>
+            <button onclick="myFunction('Wis')" class="w3-button w3-block w3-left-align w3-hover-white w3-hover-text-black">
+                Sabedoria</button>
+                <div id="Wis" class="w3-container w3-hide">
+                    <a class="w3-bar-item w3-button w3-hover-white w3-hover-text-black" href="#adestrar">Adestrar Animais</a>
+                    <a class="w3-bar-item w3-button w3-hover-white w3-hover-text-black" href="#intuicao">Intuição</a>
+                    <a class="w3-bar-item w3-button w3-hover-white w3-hover-text-black" href="#medicina">Medicina</a>
+                    <a class="w3-bar-item w3-button w3-hover-white w3-hover-text-black" href="#percepcao">Percepção</a>
+                    <a class="w3-bar-item w3-button w3-hover-white w3-hover-text-black" href="#sobrevivencia">Sobrevivência</a>
+                </div>
+            <button onclick="myFunction('Cha')" class="w3-button w3-block w3-left-align w3-yhover-theme w3-hover-text-theme">
+                Charisma</button>
+                <div id="Cha" class="w3-container w3-hide">
+                    <a class="w3-bar-item w3-button w3-yhover-theme w3-hover-text-theme" href="#atuacao">Atuação</a>
+                    <a class="w3-bar-item w3-button w3-yhover-theme w3-hover-text-theme" href="#enganacao">Enganação</a>
+                    <a class="w3-bar-item w3-button w3-yhover-theme w3-hover-text-theme" href="#intimidacao">Intimidação</a>
+                    <a class="w3-bar-item w3-button w3-yhover-theme w3-hover-text-theme" href="#persuassao">Persuassão</a>
+                </div>
         </nav>
 
-        <!-- Overlay effect when opening sidebar on small screens -->
-        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-        <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
         <div class="w3-main" style="margin-left:250px">
-
-
-
             <div class="w3-row w3-padding-64">
                 <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-black" style="text-align: center; font-family:'Tangerine', cursive; font-size: 5em;">Pericias</h1>
-                    <p>Ark, me ajuda. Meu personagem não é um inutil, ele era um Nobre, me fale que ele tem alguma habilidade, alguma coisa util.
-                        Bem Meu caro, é ai que as pericias entram. Seu personagem apredeu algumas coisas como Nobre. Mas aprendeu algumas outras tambem durante o treinamento dele para se tornar um aventureiro.</p>
+                    <h4><em>"Ark,meu personagem treinou bastante. Ou seja ele não é inutil mas e ai? o que ele sabe? Tenho algumas ideias do que pode ser, mas vai saber né?!<br> 
+                        O que eu posso fazer?"<br><br>
+                        Bem meu caro aventureiro, cada classe e antecedente lhe fornece certas perícias, que definem suas habilidades</em><br><br> <strong>Existem diversas perícias e é sobre isso que eu irei te explicar. Me acompanhe!</strong></h4><br>
+                        <h1 class="w3-text-brown" style="text-align: center;">Perícias</h1>
+                        <p>Perícias são habilidades desenvolvidas e/ou aprimoradas durante seu tempo de treinamento (reclusão ou qualquer processo que tenha passado para se tornar o aventureiro que é atualmente)</p>
                 </div>
-                <br><br>
-                <br><br>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
             </div>
-            <div class="w3-row w3-padding-64">
-                    <div class="w3-twothird w3-container">
-                        <h1 class="w3-text-khaki" style="text-align: center;">Acrobacia</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <div class="w3-third w3-container">
-                        <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                        <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    </div>
-                
 
-                <div class="w3-row">
-                    <div class="w3-twothird w3-container">
-                        <h1 class="w3-text-yellow" style="text-align: center;">Adestrar Animais</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <div class="w3-third w3-container">
-                        <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                        <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    </div>
-                </div>
-
-                <div class="w3-row">
-                    <div class="w3-twothird w3-container">
-                        <h1 class="w3-text-deep-purple" style="text-align: center;">Arcanismo</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <div class="w3-third w3-container">
-                        <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                        <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    </div>
-                </div>
-
+            <div class="w3-row">
                 <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-red" style="text-align: center;">Atletismo</h1>
-                    <p>Um teste de Força (Atletismo) abrange as situações difíceis que você encontra ao escalar, saltar ou nadar.</p>
-                    <ul>
-                        <li>Você tenta escalar um penhasco natural ou escorregadio, evitar perigos enquanto escala uma parede, ou agarrar-se a uma superfície quando algo está tentando derrubá-lo</li>
-                        <li>Você tenta saltar uma distância excepcionalmente longa ou executar um salto em altura.</li>
-                        <li>Você luta para nadar ou manter-se à tona em corredeiras traiçoeiras, ondas agitadas pela tempestade ou áreas com algas espessas. Ou outra criatura tenta empurrá-lo ou puxá-lo debaixo da água ou interferir de outra forma em sua natação.</li>
-                    </ul>
-                </div>
-                <div class="w3-third w3-container">
-                <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
+                    <h1 class="w3-ptext-theme" id="acrobacia"><a href="suggested.htm">Acrobacia</a></h1><br>
+                    <p>Um teste de Acrobacia abrange uma tentativa de permanecer de pé em uma situação complicada, como tentar correr sobre uma camada de gelo, equilibrar-se na corda bamba ou ficar de pé no convés de um navio que balança. O Mestre também pode pedir um teste de Destreza (Acrobacia) para ver se você é capaz de realizar acrobacias, como cambalhotas e saltos mortais.</p>
                 </div>
 
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-purple" style="text-align: center;">Atuação</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
                 <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-purple" style="text-align: center;">Enganação</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-khaki" style="text-align: center;">Furtividade</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-deep-purple" style="text-align: center;">Historia</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-purple" style="text-align: center;">Intimidação</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-yellow" style="text-align: center;">Intuição</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-deep-purple" style="text-align: center;">Investigação</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-yellow" style="text-align: center;">Medicina</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-            
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-deep-purple" style="text-align: center;">Natureza</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-yellow" style="text-align: center;">Percepção</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-            
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-purple" style="text-align: center;">Persuassão</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-khaki" style="text-align: center;">Prestidigitação</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-deep-purple" style="text-align: center;">Religião</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
-                <div class="w3-twothird w3-container">
-                    <h1 class="w3-text-yellow" style="text-align: center;">Sobrevivência</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <div class="w3-third w3-container">
-                    <p class="w3-border w3-padding-large w3-padding-32 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                    <p class="w3-border w3-padding-large w3-padding-64 w3-center"><script data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></p>
-                </div>
-
             </div>
-            <footer id="myFooter">
-                <div class="w3-container w3-theme-l8 w3-padding-10">
-                    <img id="greet" src="../Images/U1.png">
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-white" id="Adestrar"><a href="suggested.htm">Adestrar Animais</a></h1><br>
+                    <p>Quando houver a necessidade de saber se você pode acalmar um animal domesticado, impedir uma montaria de se assustar, ou intuir as intenções de um animal, o Mestre pode pedir um teste de Adestrar Animais. Você também realiza um teste de Adestrar Animais para controlar sua montaria ao tentar uma manobra arriscada.</p>
                 </div>
 
-                <div class="w3-container w3-theme-l8">
-                <p>D&D™ & © 1995-2020 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved</p>
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 </div>
-            </footer>
+            </div>
 
-            <!-- END MAIN -->
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-indigo" id="arcanismo"><a href="suggested.htm">Arcanismo</a></h1><br>
+                    <p>Um teste de Arcanismo mede conhecimento sobre magias, itens mágicos, símbolos sobrenaturais, tradições mágicas, os planos de existência e os habitantes desses planos.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-orange" id="atletismo"><a href="suggested.htm">Atletismo</a></h1><br>
+                    <p>Um teste de Atletismo abrange as situações difíceis que você encontra ao escalar, saltar ou nadar. Os exemplos incluem as seguintes atividades:
+                    <li>Você tenta escalar um penhasco natural ou escorregadio, evitar perigos enquanto escala uma parede, ou agarrar-se a uma superfície quando algo está tentando derrubá-lo.</li>
+                    <li>Você tenta saltar uma distância excepcionalmente longa ou executar um salto em altura.</li>
+                    <li>Você luta para nadar ou manter-se à tona em corredeiras traiçoeiras, ondas agitadas pela tempestade ou áreas com algas espessas. Ou outra criatura tenta empurrá-lo ou puxá-lo debaixo da água ou interferir de outra forma em sua natação.</li></p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-ytext-theme" id="atuacao"><a href="suggested.htm">Atuação</a></h1><br>
+                    <p>Um teste de Atuação determina o quão bem você pode entreter uma plateia com música, dança, atuação, contando histórias ou alguma outra forma de entretenimento.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-ytext-theme" id="enganacao"><a href="suggested.htm">Enganação</a></h1><br>
+                    <p>Um teste de Enganação determina se você pode esconder a verdade de forma convincente, verbalmente ou através de suas ações. Esse engano pode abranger tudo, como iludir os outros através de uma mentira cheia de ambiguidade. Situações típicas incluem tentar ludibriar um guarda, iludir um comerciante, ganhar dinheiro através de jogos de azar, usar um disfarce, amenizar as suspeitas de alguém com falsas garantias ou manter uma cara séria ao contar uma mentira descarada.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-ptext-theme" id="furtividade"><a href="suggested.htm">Furtividade</a></h1><br>
+                    <p>Um teste de Furtividade é realizado para tentar esconder-se de inimigos, esgueirarse por guardas, escapar sem ser notado, ou aproximar-se de alguém sem ser visto ou ouvido.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+        <div class="w3-row w3-padding-64">
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-indigo" id="historia"><a href="suggested.htm">História</a></h1><br>
+                    <p>Um teste de História mede o conhecimento sobre eventos históricos, pessoas lendárias, reinos antigos, disputas passadas,guerras recentes e civilizações perdidas.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-ytext-theme" id="intimidacao"><a href="suggested.htm">Intimidação</a></h1><br>
+                    <p>Ao tentar influenciar alguém através de ameaças abertas, ações hostis e violência física, o Mestre pode pedir a realização de um teste de Intimidação. Exemplos incluem tentar arrancar informações de um prisioneiro, convencer bandidos de rua a recuar de um confronto ou usar uma garrafa quebrada para convencer um vizir sarcástico a reconsiderar uma decisão.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-ytext-theme" id="intuicao"><a href="suggested.htm">Intuição</a></h1><br>
+                    <p>Um teste de Intuição decide se você pode determinar as verdadeiras intenções de uma criatura, perceber uma mentira ou prever o próximo movimento de alguém. Fazer isso envolve recolher pistas a partir da linguagem corporal, os hábitos da fala e as mudanças nos maneirismos.
+                    </p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-indigo" id="investigacao"><a href="suggested.htm">Investigação</a></h1><br>
+                    <p>Quando você olha ao redor em busca de pistas e faz deduções com base nesses indícios, você realiza um teste de Investigação. Você pode deduzir a localização de um objeto escondido, discernir, a partir da aparência de um ferimento, que tipo de arma o causou, ou determinar o ponto mais fraco em um túnel que poderia causar o seu colapso. Debruçar-se sobre pergaminhos antigos em busca de um fragmento escondido de conhecimento também pode necessitar um teste de Investigação.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-white" id="medicina"><a href="suggested.htm">Medicina</a></h1><br>
+                    <p>Um teste de Medicina permite tentar estabilizar um companheiro que está morrendo ou diagnosticar uma doença.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-indigo" id="natureza"><a href="suggested.htm">Natureza</a></h1><br>
+                    <p>Um teste de Natureza mede o conhecimento sobre terreno, plantas e animais, clima e ciclos naturais.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-white" id="percepcao"><a href="suggested.htm">Percepção</a></h1><br>
+                    <p> Um teste de Percepção permite observar, ouvir ou detectar a presença de alguma coisa de outra forma. A percepção mede a consciência geral do que está acontecendo ao seu redor e a acuidade
+                    de seus sentidos. Por exemplo, você pode tentar ouvir uma conversa através de uma porta fechada, bisbilhotar sob uma janela aberta ou ouvir monstros movendo-se furtivamente na floresta. Ou você pode tentar detectar coisas que são obscurecidas ou que normalmente passariam despercebidas, desde uma emboscada de orcs em uma estrada, bandidos escondidos nas sombras de um beco ou uma porta secreta fechada somente com a luz de velas.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-ytext-theme" id="persuassao"><a href="suggested.htm">Persuassão</a></h1><br>
+                    <p>Quando você tenta influenciar alguém ou um grupo de pessoas com tato, delicadeza ou boa índole, o Mestre pode pedir para você fazer de um teste de Persuasão. Normalmente, você usa a Persuasão quando está agindo de boa-fé, para promover amizades, fazer pedidos cordiais ou exibir a etiqueta apropriada. Exemplos de persuadir os outros incluem convencer um mordomo a deixar seu grupo ver o rei, negociar a paz entre duas tribos em conflito ou inspirar uma multidão de pessoas da cidade</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-ptext-theme" id="prestidigitacao"><a href="suggested.htm">Prestidigitação</a></h1><br>
+                    <p>Sempre que você tentar realizar um ato de prestidigitação ou de trapaça manual, como plantar alguma coisa em outra pessoa ou esconder um objeto em sua roupa, você deve fazer um teste de Prestidigitação. O Mestre também pode pedir um teste de Destreza Prestidigitação para determinar se você pode roubar uma bolsa de moedas de outra pessoa ou pegar algo do bolso de outra pessoa</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-indigo" id="religiao"><a href="suggested.htm">Religião</a></h1><br>
+                    <p>Um teste de Religião mede o conhecimento de lendas sobre divindades, rituais e orações, hierarquias religiosas, símbolos sagrados e práticas de cultos secretos</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-text-white" id="sobrevivencia"><a href="suggested.htm">Sobrevivência</a></h1><br>
+                    <p>Um teste de Sobrevivência é feito para seguir rastros, caçar, orientar o grupo através de terras congeladas, identificar sinais de que ursos-coruja vivem nas proximidades, prever o tempo, ou evitar areia movediça e outros perigos naturais.</p>
+                </div>
+
+                <div class="w3-third w3-container">
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <script class="w3-border w3-padding-large w3-padding-32 w3-center" data-ad-client="ca-pub-3579289318066068" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                </div>
+            </div>
+            <br><br>
+            <div class="w3-twothird w3-container">
+                <h4><em>Independentemente, de qual antecedente e classe você escolha, durante sua vida você poderá aperfeicoar e aprender coisas novas durante suas aventuras com seus companheiros e com as pessoas que você encontrar no seu caminho.</em></h4>
+            </div>
+            <img src="../Images/U1.png" alt="Signature" id="outro" style="float: right;">
         </div>
+
+            <div class="footer">
+                <img src="../Images/Logo.png" alt="Logo" width="10%">
+                <p>D&D™ & © 1995-2020 Wizards of the Coast LLC, a subsidiary of Hasbro, Inc. All Rights Reserved</p>
+            </div>
+        </div>
+
+        <script src="../Js/Pericias.js"></script>
     </body>
 </html>
