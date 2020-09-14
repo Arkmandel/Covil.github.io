@@ -63,10 +63,54 @@ nav a{
 .w3-celhover-text-theme:hover {color:#336666 !important}
 .w3-celhover-border-theme:hover {border-color:#336666 !important}
 
-/*Celtic*/
+/*D&D*/
 
-/*Celtic*/
+/*Egipcian*/
+.w3-egtheme-l5 {color:#000 !important; background-color:#fffdf0 !important}
+.w3-egtheme-l4 {color:#000 !important; background-color:#fff7cc !important}
+.w3-egtheme-l3 {color:#000 !important; background-color:#fff099 !important}
+.w3-egtheme-l2 {color:#000 !important; background-color:#ffe866 !important}
+.w3-egtheme-l1 {color:#000 !important; background-color:#ffe033 !important}
+.w3-egtheme-d1 {color:#000 !important; background-color:#e6c300 !important}
+.w3-egtheme-d2 {color:#fff !important; background-color:#ccad00 !important}
+.w3-egtheme-d3 {color:#fff !important; background-color:#b39800 !important}
+.w3-egtheme-d4 {color:#fff !important; background-color:#998200 !important}
+.w3-egtheme-d5 {color:#fff !important; background-color:#806c00 !important}
 
-/*Celtic*/
+.w3-egtheme-light {color:#000 !important; background-color:#fffdf0 !important}
+.w3-egtheme-dark {color:#fff !important; background-color:#806c00 !important}
+.w3-egtheme-action {color:#fff !important; background-color:#806c00 !important}
 
-/*Celtic*/
+.w3-egtheme {color:#000 !important; background-color:#ffd700 !important}
+.w3-egtext-theme {color:#ffd700 !important}
+.w3-egborder-theme {border-color:#ffd700 !important}
+
+.w3-eghover-theme:hover {color:#000 !important; background-color:#ffd700 !important}
+.w3-eghover-text-theme:hover {color:#ffd700 !important}
+.w3-eghover-border-theme:hover {border-color:#ffd700 !important}
+
+/*Greek*/
+
+/*Nordic*/
+.w3-ndtheme-l5 {color:#000 !important; background-color:#fdf2eb !important}
+.w3-ndtheme-l4 {color:#000 !important; background-color:#f9d3bd !important}
+.w3-ndtheme-l3 {color:#000 !important; background-color:#f4a87c !important}
+.w3-ndtheme-l2 {color:#fff !important; background-color:#ee7c3a !important}
+.w3-ndtheme-l1 {color:#fff !important; background-color:#ce5712 !important}
+.w3-ndtheme-d1 {color:#fff !important; background-color:#7f350b !important}
+.w3-ndtheme-d2 {color:#fff !important; background-color:#712f0a !important}
+.w3-ndtheme-d3 {color:#fff !important; background-color:#632a09 !important}
+.w3-ndtheme-d4 {color:#fff !important; background-color:#542407 !important}
+.w3-ndtheme-d5 {color:#fff !important; background-color:#461e06 !important}
+
+.w3-ndtheme-light {color:#000 !important; background-color:#fdf2eb !important}
+.w3-ndtheme-dark {color:#fff !important; background-color:#461e06 !important}
+.w3-ndtheme-action {color:#fff !important; background-color:#461e06 !important}
+
+.w3-ndtheme {color:#fff !important; background-color:#8c3b0c !important}
+.w3-ndtext-theme {color:#8c3b0c !important}
+.w3-ndborder-theme {border-color:#8c3b0c !important}
+
+.w3-ndhover-theme:hover {color:#fff !important; background-color:#8c3b0c !important}
+.w3-ndhover-text-theme:hover {color:#8c3b0c !important}
+.w3-ndhover-border-theme:hover {border-color:#8c3b0c !important}
