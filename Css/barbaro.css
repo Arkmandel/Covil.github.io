@@ -114,8 +114,3 @@ nav a{
 .w3-ndhover-theme:hover {color:#fff !important; background-color:#8c3b0c !important}
 .w3-ndhover-text-theme:hover {color:#8c3b0c !important}
 .w3-ndhover-border-theme:hover {border-color:#8c3b0c !important}
-
-.gods{
-    width: 15%;
-    float: right;
-}
