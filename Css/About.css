@@ -6,7 +6,6 @@ body {
 
 html {
     box-sizing: border-box;
-    background-image: url("../Images/paper.jpg");
 }
 
 *, *::before, *::after {
@@ -55,11 +54,6 @@ html {
     }
 }
 
-.footer{
-    padding: 20px;
-    text-align: center;
-}
-
 #historia {
     margin-bottom: 25px;
 }
@@ -71,48 +65,4 @@ html {
 
 .credits {
     font-weight: bolder;
-}
-
-.topNav {
-    overflow: hidden;
-    background-color: #323232;
-    z-index: 10;
-}
-
-.topNav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.topNav a.righ {
-    float: left;
-}
-
-.topNav a:hover {
-    background-color: #795548;
-    color: #ff5722;
-}
-
-.topNav #home {
-    background-color: darkgray;
-    
-}
-
-.topNav #home:hover{
-    background-color: #838383;
-    color: black
-}
-
-.topNav #about{
-    float: right;
-
-}
-
-.topNav #about:hover{
-    background-color: #663399;
-    color: aqua;
 }
